@@ -1,0 +1,287 @@
+/* ===== ESCUELA PAGE ===== */
+
+/* Intro */
+.escuela-intro {
+    padding: 80px 0;
+}
+
+.escuela-intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.escuela-intro-text h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.escuela-intro-text h2 span {
+    color: var(--color-green);
+}
+
+.escuela-intro-text p {
+    color: var(--color-gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.escuela-intro-image .placeholder-img {
+    height: 400px;
+}
+
+/* Stats */
+.escuela-stats {
+    background: var(--color-black-light);
+    padding: 60px 0;
+    border-top: 1px solid var(--color-gray-dark);
+    border-bottom: 1px solid var(--color-gray-dark);
+}
+
+.escuela-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.escuela-stat {
+    padding: 20px;
+}
+
+.escuela-stat .stat-number {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: var(--color-green);
+}
+
+.escuela-stat .stat-label {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+/* Categories */
+.escuela-categorias {
+    padding: 100px 0;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.categoria-card {
+    background: var(--color-black-card);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius);
+    padding: 32px 24px;
+    text-align: center;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.categoria-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-green);
+    transform: scaleX(0);
+    transition: transform var(--transition-normal);
+}
+
+.categoria-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-green);
+    box-shadow: var(--shadow-glow);
+}
+
+.categoria-card:hover::after {
+    transform: scaleX(1);
+}
+
+.categoria-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 200, 83, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 1.5rem;
+    color: var(--color-green);
+    transition: all var(--transition-normal);
+}
+
+.categoria-card:hover .categoria-icon {
+    background: var(--color-green);
+    color: var(--color-black);
+}
+
+.categoria-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.categoria-card .edad {
+    color: var(--color-green);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.categoria-card p {
+    color: var(--color-gray);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Benefits */
+.escuela-beneficios {
+    background: var(--color-black-light);
+    padding: 100px 0;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: var(--color-black-card);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-normal);
+}
+
+.beneficio-item:hover {
+    border-color: var(--color-green);
+    transform: translateY(-3px);
+}
+
+.beneficio-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+    background: rgba(0, 200, 83, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-green);
+    font-size: 1.2rem;
+}
+
+.beneficio-text h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.beneficio-text p {
+    color: var(--color-gray);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Gallery */
+.escuela-galeria {
+    padding: 100px 0;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.galeria-grid .placeholder-img {
+    height: 250px;
+}
+
+/* CTA */
+.escuela-inscripcion {
+    background: var(--color-black-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.escuela-inscripcion .cta-box {
+    background: var(--color-black-card);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius-lg);
+    padding: 60px 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.escuela-inscripcion .cta-box h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.escuela-inscripcion .cta-box h2 span {
+    color: var(--color-green);
+}
+
+.escuela-inscripcion .cta-box p {
+    color: var(--color-gray);
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+    .escuela-intro-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .escuela-intro-image {
+        order: -1;
+    }
+
+    .escuela-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .escuela-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .escuela-inscripcion .cta-box {
+        padding: 40px 24px;
+    }
+}

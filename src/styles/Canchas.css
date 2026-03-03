@@ -1,0 +1,209 @@
+/* ===== CANCHAS PAGE ===== */
+.canchas-list {
+    padding: 80px 0;
+}
+
+.cancha-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid var(--color-gray-dark);
+}
+
+.cancha-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.cancha-item.reverse {
+    direction: rtl;
+}
+
+.cancha-item.reverse>* {
+    direction: ltr;
+}
+
+/* Gallery */
+.cancha-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.cancha-gallery-main .placeholder-img {
+    height: 350px;
+}
+
+.cancha-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.cancha-gallery-thumbs .placeholder-img {
+    height: auto;
+}
+
+/* Info */
+.cancha-info {
+    padding: 20px 0;
+}
+
+.cancha-type-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    background: rgba(0, 200, 83, 0.15);
+    color: var(--color-green);
+    border: 1px solid rgba(0, 200, 83, 0.3);
+}
+
+.cancha-type-badge.techada {
+    background: var(--color-green);
+    color: var(--color-black);
+    border-color: var(--color-green);
+}
+
+.cancha-info h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.cancha-info h2 span {
+    color: var(--color-green);
+}
+
+.cancha-description {
+    color: var(--color-gray);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.cancha-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.cancha-spec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-gray-light);
+    font-size: 0.9rem;
+}
+
+.cancha-spec i {
+    color: var(--color-green);
+    width: 20px;
+    text-align: center;
+}
+
+/* Prices */
+.cancha-prices {
+    background: var(--color-black-light);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius-sm);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+.cancha-prices h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.price-label {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-label i {
+    font-size: 0.8rem;
+}
+
+.price-value {
+    color: var(--color-green);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Features badges */
+.cancha-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.feature-badge {
+    background: var(--color-black-light);
+    border: 1px solid var(--color-gray-dark);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: var(--color-gray-light);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.feature-badge i {
+    color: var(--color-green);
+    font-size: 0.7rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+    .cancha-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cancha-item.reverse {
+        direction: ltr;
+    }
+
+    .cancha-specs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cancha-gallery-main .placeholder-img {
+        height: 220px;
+    }
+
+    .cancha-gallery-thumbs .placeholder-img {
+        height: 70px;
+    }
+}
