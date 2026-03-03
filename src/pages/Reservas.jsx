@@ -240,7 +240,7 @@ function Reservas() {
                                             <td>$100.000</td>
                                         </tr>
                                         <tr>
-                                            <td>Cancha 3 ⭐</td>
+                                            <td>Cancha 3 </td>
                                             <td>$100.000</td>
                                             <td>$120.000</td>
                                         </tr>
