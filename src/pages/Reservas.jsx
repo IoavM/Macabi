@@ -203,11 +203,11 @@ function Reservas() {
                                 <div className="hours-list">
                                     <div className="hours-item">
                                         <span>Lunes a Sábados</span>
-                                        <span>3pm - 11pm</span>
+                                        <span>3:00 PM - 11:00 PM</span>
                                     </div>
                                     <div className="hours-item">
                                         <span>Domingos</span>
-                                        <span>3pm - 10pm</span>
+                                        <span>3:00 PM - 10:00 PM</span>
                                     </div>
                                 </div>
                             </div>
