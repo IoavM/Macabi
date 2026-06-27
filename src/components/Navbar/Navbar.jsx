@@ -45,9 +45,6 @@ function Navbar() {
                     <Link to="/escuela" className={location.pathname === '/escuela' ? 'active' : ''}>
                         Escuela
                     </Link>
-                    <Link to="/reservas" className={location.pathname === '/reservas' ? 'active' : ''}>
-                        Reservas
-                    </Link>
                     <Link to="/contacto" className={location.pathname === '/contacto' ? 'active' : ''}>
                         Contáctanos
                     </Link>
