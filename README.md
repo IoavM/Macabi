@@ -111,6 +111,7 @@ La aplicación estará disponible de forma predeterminada en: [http://localhost:
 ├── eslint.config.js        # Reglas de estilo de desarrollo
 ├── index.html              # Plantilla base HTML del portal
 ├── package.json            # Scripts de ejecución y dependencias del proyecto
+├── vercel.json             # Reglas de redirección de rutas para SPA en Vercel
 └── vite.config.js          # Configuración del bundler Vite
 ```
 
@@ -128,7 +129,9 @@ El proyecto no requiere de variables de entorno ni integraciones de APIs complej
    ```bash
    npm run build
    ```
-2. Desplegar los archivos de la carpeta `/dist` en plataformas como Vercel, Netlify, GitHub Pages o tu servidor web de preferencia.
+2. Desplegar los archivos de la carpeta `/dist` en plataformas como Vercel, Netlify, GitHub Pages o tu servidor web de preferencia. 
+
+*Nota: Para despliegues en Vercel, el archivo `vercel.json` ya incluye las reglas necesarias para redirigir todas las rutas al `index.html` y evitar errores 404 al recargar subpáginas.*
 
 ---
 
