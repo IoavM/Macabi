@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cancha 1",
+        "tipo": "Aire Libre",
+        "techada": false,
+        "descripcion": "Cancha sintética al aire libre con césped de última generación. Perfecta para partidos diurnos y nocturnos con iluminación LED de alto rendimiento.",
+        "descripcionCorta": "Cancha sintética al aire libre con la mejor grama.",
+        "capacidad": "6 vs 6 / 7 vs 7",
+        "dimensiones": "35m × 18m",
+        "precioDia": "$70.000",
+        "precioNoche": "$100.000",
+        "imagenPrincipal": "/images/canchas/cancha1/principal.png",
+        "imagenesGaleria": [
+            "/images/canchas/cancha1/galeria1.png",
+            "/images/canchas/cancha1/galeria2.png",
+            "/images/canchas/cancha1/galeria3.png"
+        ],
+        "caracteristicas": ["Césped sintético", "Iluminación LED", "Parqueadero"]
+    },
+    {
+        "id": 2,
+        "nombre": "Cancha 2",
+        "tipo": "Aire Libre",
+        "techada": false,
+        "descripcion": "Nuestra segunda cancha al aire libre cuenta con la mejor superficie de juego y sistema de drenaje para que juegues incluso después de la lluvia.",
+        "descripcionCorta": "Cancha sintética al aire libre con iluminación LED.",
+        "capacidad": "6 vs 6 / 7 vs 7",
+        "dimensiones": "35m × 18m",
+        "precioDia": "$70.000",
+        "precioNoche": "$100.000",
+        "imagenPrincipal": "/images/canchas/cancha2/principal.png",
+        "imagenesGaleria": [
+            "/images/canchas/cancha2/galeria1.png",
+            "/images/canchas/cancha2/galeria2.png",
+            "/images/canchas/cancha2/galeria3.png"
+        ],
+        "caracteristicas": ["Césped sintético", "Iluminación LED", "Drenaje avanzado"]
+    },
+    {
+        "id": 3,
+        "nombre": "Cancha 3",
+        "tipo": "Techada",
+        "techada": true,
+        "descripcion": "Nuestra cancha premium con techo completo. Juega sin importar el clima, con la mejor iluminación y ventilación. La favorita de los torneos.",
+        "descripcionCorta": "Nuestra cancha premium techada. Juega llueva o truene.",
+        "capacidad": "6 vs 6 / 7 vs 7",
+        "dimensiones": "35m × 18m",
+        "precioDia": "$100.000",
+        "precioNoche": "$120.000",
+        "imagenPrincipal": "/images/canchas/cancha3/principal.png",
+        "imagenesGaleria": [
+            "/images/canchas/cancha3/galeria1.png",
+            "/images/canchas/cancha3/galeria2.png",
+            "/images/canchas/cancha3/galeria3.png"
+        ],
+        "caracteristicas": ["Techada", "Césped premium", "Iluminación LED"]
+    }
+]

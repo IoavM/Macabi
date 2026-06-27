@@ -1,0 +1,17 @@
+{
+    "canchaOptions": [
+        { "value": "", "label": "Seleccionar cancha" },
+        { "value": "cancha1", "label": "Cancha 1 — Aire Libre" },
+        { "value": "cancha2", "label": "Cancha 2 — Aire Libre" },
+        { "value": "cancha3", "label": "Cancha 3 — Techada" }
+    ],
+    "horaOptions": [
+        "3:00 PM", "4:00 PM", "5:00 PM",
+        "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM"
+    ],
+    "precios": {
+        "cancha1": { "dia": 80000, "noche": 100000 },
+        "cancha2": { "dia": 80000, "noche": 100000 },
+        "cancha3": { "dia": 100000, "noche": 120000 }
+    }
+}

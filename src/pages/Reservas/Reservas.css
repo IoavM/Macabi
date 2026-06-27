@@ -1,4 +1,4 @@
-/* ===== RESERVAS PAGE ===== */
+/*-----CONTENIDO-RESERVAS--------*/
 .reservas-content {
     padding: 80px 0;
 }
@@ -10,7 +10,7 @@
     align-items: start;
 }
 
-/* Form */
+/*-----FORMULARIO-RESERVAS--------*/
 .reservas-form-card {
     background: var(--color-black-card);
     border: 1px solid var(--color-gray-dark);
@@ -87,7 +87,7 @@
     gap: 16px;
 }
 
-/* Duration buttons */
+/*-----DURACION-Y-PRECIO--------*/
 .duration-buttons {
     display: flex;
     gap: 12px;
@@ -118,7 +118,6 @@
     color: var(--color-black);
 }
 
-/* Price estimate */
 .price-estimate {
     background: rgba(0, 200, 83, 0.08);
     border: 1px solid rgba(0, 200, 83, 0.3);
@@ -142,7 +141,7 @@
     letter-spacing: 2px;
 }
 
-/* ===== SIDEBAR ===== */
+/*-----BARRA-LATERAL--------*/
 .reservas-sidebar {
     display: flex;
     flex-direction: column;
@@ -175,7 +174,7 @@
     line-height: 1.7;
 }
 
-/* Tariff table */
+/*-----TABLA-TARIFAS-Y-POLITICAS--------*/
 .tariff-table {
     width: 100%;
     border-collapse: collapse;
@@ -205,7 +204,6 @@
     border-bottom: none;
 }
 
-/* Policy list */
 .policy-list {
     display: flex;
     flex-direction: column;
@@ -228,7 +226,6 @@
     min-width: 16px;
 }
 
-/* Hours */
 .hours-list {
     display: flex;
     flex-direction: column;
@@ -248,7 +245,7 @@
     font-weight: 600;
 }
 
-/* ===== RESPONSIVE ===== */
+/*-----DISENIO-RESPONSIVO--------*/
 @media (max-width: 968px) {
     .reservas-wrapper {
         grid-template-columns: 1fr;

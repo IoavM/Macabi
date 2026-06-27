@@ -1,4 +1,4 @@
-/* ===== FOOTER ===== */
+/*-----PIE-PAGINA--------*/
 .footer {
     background: var(--color-black-light);
     padding: 80px 0 0;
@@ -100,7 +100,7 @@
     font-weight: 600;
 }
 
-/* ===== RESPONSIVE ===== */
+/*-----DISENIO-RESPONSIVO--------*/
 @media (max-width: 968px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "canchas",
+        "icon": "fas fa-futbol",
+        "titulo": "Canchas",
+        "descripcion": "3 canchas sintéticas de última generación, incluyendo una techada para jugar sin importar el clima.",
+        "enlace": "/canchas",
+        "textoEnlace": "Ver Canchas"
+    },
+    {
+        "id": "escuela",
+        "icon": "fas fa-graduation-cap",
+        "titulo": "Escuela",
+        "descripcion": "Escuela de fútbol con entrenadores certificados para todas las edades. Formamos los campeones del mañana.",
+        "enlace": "/escuela",
+        "textoEnlace": "Más Info"
+    },
+    {
+        "id": "reservas",
+        "icon": "fas fa-calendar-alt",
+        "titulo": "Reservas",
+        "descripcion": "Reserva tu cancha de forma rápida y sencilla por WhatsApp. Horarios flexibles y tarifas accesibles.",
+        "enlace": "/reservas",
+        "textoEnlace": "Reservar"
+    }
+]

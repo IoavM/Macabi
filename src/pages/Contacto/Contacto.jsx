@@ -1,14 +1,6 @@
 import { useState } from 'react'
-import '../styles/Contacto.css'
-
-const asuntoOptions = [
-    { value: '', label: 'Seleccionar asunto' },
-    { value: 'reserva', label: 'Información sobre reservas' },
-    { value: 'escuela', label: 'Escuela de fútbol' },
-    { value: 'torneos', label: 'Torneos y eventos' },
-    { value: 'empresarial', label: 'Eventos empresariales' },
-    { value: 'otro', label: 'Otro' },
-]
+import asuntoOptions from './asuntoOptions.json'
+import './Contacto.css'
 
 function Contacto() {
     const [form, setForm] = useState({
@@ -37,7 +29,7 @@ function Contacto() {
             `💬 *Mensaje:* ${form.mensaje}\n` +
             `\n¡Gracias!`
 
-        const url = `https://wa.me/573000000000?text=${encodeURIComponent(msg)}`
+        const url = `https://wa.me/573014775550?text=${encodeURIComponent(msg)}`
         window.open(url, '_blank')
     }
 
@@ -53,7 +45,6 @@ function Contacto() {
             <section className="contacto-content">
                 <div className="container">
                     <div className="contacto-wrapper">
-                        {/* Info Panel */}
                         <div className="contacto-info">
                             <div className="contacto-info-card">
                                 <h3><i className="fas fa-headset"></i> Información de Contacto</h3>
@@ -97,7 +88,6 @@ function Contacto() {
                                 </div>
                             </div>
 
-                            {/* Social */}
                             <div className="contacto-info-card">
                                 <h3><i className="fas fa-share-alt"></i> Redes Sociales</h3>
                                 <div className="contacto-social">
@@ -116,7 +106,6 @@ function Contacto() {
                                 </div>
                             </div>
 
-                            {/* Map */}
                             <div className="contacto-info-card contacto-map">
                                 <h3><i className="fas fa-map"></i> Ubicación</h3>
                                 <iframe
@@ -132,7 +121,6 @@ function Contacto() {
                             </div>
                         </div>
 
-                        {/* Form */}
                         <div className="contacto-form-card">
                             <h2>Envíanos un <span>Mensaje</span></h2>
                             <p>Completa el formulario y te responderemos por WhatsApp</p>

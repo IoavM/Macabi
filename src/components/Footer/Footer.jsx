@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/Footer.css'
+import './Footer.css'
 
 function Footer() {
     const currentYear = new Date().getFullYear()
@@ -8,7 +8,6 @@ function Footer() {
         <footer className="footer">
             <div className="container">
                 <div className="footer-grid">
-                    {/* Brand */}
                     <div className="footer-brand">
                         <div className="footer-logo">MACA<span>BI</span></div>
                         <p>
@@ -31,7 +30,6 @@ function Footer() {
                         </div>
                     </div>
 
-                    {/* Navigation */}
                     <div className="footer-column">
                         <h4>Navegación</h4>
                         <ul>
@@ -43,7 +41,6 @@ function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact */}
                     <div className="footer-column">
                         <h4>Contacto</h4>
                         <ul>
@@ -56,7 +53,6 @@ function Footer() {
                         </ul>
                     </div>
 
-                    {/* Hours */}
                     <div className="footer-column">
                         <h4>Horario</h4>
                         <ul>

@@ -1,0 +1,8 @@
+[
+    { "value": "", "label": "Seleccionar asunto" },
+    { "value": "reserva", "label": "Información sobre reservas" },
+    { "value": "escuela", "label": "Escuela de fútbol" },
+    { "value": "torneos", "label": "Torneos y eventos" },
+    { "value": "empresarial", "label": "Eventos empresariales" },
+    { "value": "otro", "label": "Otro" }
+]

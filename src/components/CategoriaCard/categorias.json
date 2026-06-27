@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Baby Fútbol",
+        "edad": "5 - 7 años",
+        "icon": "fas fa-baby",
+        "descripcion": "Iniciación deportiva a través del juego. Desarrollo de motricidad y coordinación."
+    },
+    {
+        "nombre": "Pre-Infantil",
+        "edad": "8 - 10 años",
+        "icon": "fas fa-child",
+        "descripcion": "Fundamentos técnicos del fútbol. Trabajo en equipo y disciplina."
+    },
+    {
+        "nombre": "Infantil",
+        "edad": "11 - 13 años",
+        "icon": "fas fa-running",
+        "descripcion": "Perfeccionamiento técnico-táctico. Participación en torneos locales."
+    },
+    {
+        "nombre": "Juvenil",
+        "edad": "14 - 17 años",
+        "icon": "fas fa-futbol",
+        "descripcion": "Formación competitiva. Preparación física y mental de alto rendimiento."
+    },
+    {
+        "nombre": "Adultos",
+        "edad": "18+ años",
+        "icon": "fas fa-user",
+        "descripcion": "Entrenamiento recreativo y competitivo para adultos de todas las edades."
+    }
+]

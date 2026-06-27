@@ -1,23 +1,8 @@
 import { useState } from 'react'
-import '../styles/Reservas.css'
+import reservasData from './reservasData.json'
+import './Reservas.css'
 
-const canchaOptions = [
-    { value: '', label: 'Seleccionar cancha' },
-    { value: 'cancha1', label: 'Cancha 1 — Aire Libre' },
-    { value: 'cancha2', label: 'Cancha 2 — Aire Libre' },
-    { value: 'cancha3', label: 'Cancha 3 — Techada' },
-]
-
-const horaOptions = [
-    '3:00 PM', '4:00 PM', '5:00 PM',
-    '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM',
-]
-
-const precios = {
-    cancha1: { dia: 80000, noche: 100000 },
-    cancha2: { dia: 80000, noche: 100000 },
-    cancha3: { dia: 100000, noche: 120000 },
-}
+const { canchaOptions, horaOptions, precios } = reservasData
 
 function calcularPrecio(cancha, hora, duracion) {
     if (!cancha || !hora) return 0
@@ -91,7 +76,6 @@ function Reservas() {
             <section className="reservas-content">
                 <div className="container">
                     <div className="reservas-wrapper">
-                        {/* Form */}
                         <div className="reservas-form-card">
                             <h2>Datos de <span>Reserva</span></h2>
                             <p>Completa el formulario y envía tu solicitud por WhatsApp</p>
@@ -172,7 +156,7 @@ function Reservas() {
                                 <div className="form-group">
                                     <label><i className="fas fa-sticky-note"></i> Notas adicionales (opcional)</label>
                                     <textarea
-                                        name="notas"
+                                        name="notes"
                                         rows="3"
                                         placeholder="Ej: Necesitamos petos, queremos árbitro..."
                                         value={form.notas}
@@ -182,7 +166,7 @@ function Reservas() {
 
                                 <div className="price-estimate">
                                     <div className="price-estimate-label">
-                                            Precio estimado:
+                                        Precio estimado:
                                     </div>
                                     <div className="price-estimate-value">
                                         {precioEstimado > 0 ? formatPrice(precioEstimado) : '---'}
@@ -195,9 +179,7 @@ function Reservas() {
                             </form>
                         </div>
 
-                        {/* Sidebar */}
                         <div className="reservas-sidebar">
-                            {/* Hours */}
                             <div className="sidebar-card">
                                 <h3><i className="fas fa-clock"></i> Horario</h3>
                                 <div className="hours-list">
@@ -212,7 +194,6 @@ function Reservas() {
                                 </div>
                             </div>
 
-                            {/* Tariff */}
                             <div className="sidebar-card">
                                 <h3><i className="fas fa-tags"></i> Tarifas</h3>
                                 <table className="tariff-table">
@@ -243,7 +224,6 @@ function Reservas() {
                                 </table>
                             </div>
 
-                            {/* Policy */}
                             <div className="sidebar-card">
                                 <h3><i className="fas fa-info-circle"></i> Política de Reserva</h3>
                                 <ul className="policy-list">

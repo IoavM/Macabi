@@ -1,4 +1,4 @@
-/* ===== NAVBAR ===== */
+/*-----BARRA-NAVEGACION--------*/
 .navbar {
     position: fixed;
     top: 0;
@@ -93,7 +93,6 @@
     box-shadow: var(--shadow-glow);
 }
 
-/* Hamburger */
 .navbar-hamburger {
     display: none;
     flex-direction: column;
@@ -126,7 +125,7 @@
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* ===== MOBILE ===== */
+/*-----DISENIO-RESPONSIVO-MOVIL--------*/
 @media (max-width: 968px) {
     .navbar-hamburger {
         display: flex;

@@ -1,48 +1,10 @@
-import '../styles/Escuela.css'
+import CategoriaCard from '../../components/CategoriaCard/CategoriaCard'
+import BeneficioCard from '../../components/BeneficioCard/BeneficioCard'
+import categorias from '../../components/CategoriaCard/categorias.json'
+import beneficios from '../../components/BeneficioCard/beneficios.json'
+import './Escuela.css'
 
 function Escuela() {
-    const categorias = [
-        {
-            nombre: 'Baby Fútbol',
-            edad: '5 - 7 años',
-            icon: 'fas fa-baby',
-            descripcion: 'Iniciación deportiva a través del juego. Desarrollo de motricidad y coordinación.',
-        },
-        {
-            nombre: 'Pre-Infantil',
-            edad: '8 - 10 años',
-            icon: 'fas fa-child',
-            descripcion: 'Fundamentos técnicos del fútbol. Trabajo en equipo y disciplina.',
-        },
-        {
-            nombre: 'Infantil',
-            edad: '11 - 13 años',
-            icon: 'fas fa-running',
-            descripcion: 'Perfeccionamiento técnico-táctico. Participación en torneos locales.',
-        },
-        {
-            nombre: 'Juvenil',
-            edad: '14 - 17 años',
-            icon: 'fas fa-futbol',
-            descripcion: 'Formación competitiva. Preparación física y mental de alto rendimiento.',
-        },
-        {
-            nombre: 'Adultos',
-            edad: '18+ años',
-            icon: 'fas fa-user',
-            descripcion: 'Entrenamiento recreativo y competitivo para adultos de todas las edades.',
-        },
-    ]
-
-    const beneficios = [
-        { icon: 'fas fa-chalkboard-teacher', titulo: 'Entrenadores Certificados', desc: 'Staff profesional con licencias y experiencia comprobada.' },
-        { icon: 'fas fa-shield-alt', titulo: 'Seguro Deportivo', desc: 'Todos nuestros alumnos cuentan con seguro contra accidentes.' },
-        { icon: 'fas fa-dumbbell', titulo: 'Preparación Física', desc: 'Programa de acondicionamiento físico integral para cada categoría.' },
-        { icon: 'fas fa-trophy', titulo: 'Torneos', desc: 'Participación en torneos internos y externos durante todo el año.' },
-        { icon: 'fas fa-medkit', titulo: 'Atención Médica', desc: 'Primeros auxilios y seguimiento médico para los jugadores.' },
-        { icon: 'fas fa-tshirt', titulo: 'Uniformes', desc: 'Kit deportivo completo incluido en la inscripción.' },
-    ]
-
     const whatsappNumber = '573000000000'
     const whatsappMsg = encodeURIComponent(
         '¡Hola MACABI! 👋\n\nEstoy interesado(a) en inscribir a mi hijo/a en la Escuela de Fútbol.\n\nMe gustaría recibir más información sobre:\n- Categorías disponibles\n- Horarios de entrenamiento\n- Costos de inscripción\n\n¡Gracias!'
@@ -57,7 +19,6 @@ function Escuela() {
                 </div>
             </section>
 
-            {/* Intro */}
             <section className="escuela-intro">
                 <div className="container">
                     <div className="escuela-intro-wrapper">
@@ -84,7 +45,6 @@ function Escuela() {
                 </div>
             </section>
 
-            {/* Stats */}
             <section className="escuela-stats">
                 <div className="container">
                     <div className="escuela-stats-grid">
@@ -104,7 +64,6 @@ function Escuela() {
                 </div>
             </section>
 
-            {/* Categories */}
             <section className="escuela-categorias">
                 <div className="container">
                     <h2 className="section-title">
@@ -115,20 +74,18 @@ function Escuela() {
                     </p>
                     <div className="categorias-grid">
                         {categorias.map((cat, i) => (
-                            <div key={i} className="categoria-card">
-                                <div className="categoria-icon">
-                                    <i className={cat.icon}></i>
-                                </div>
-                                <h3>{cat.nombre}</h3>
-                                <div className="edad">{cat.edad}</div>
-                                <p>{cat.descripcion}</p>
-                            </div>
+                            <CategoriaCard
+                                key={i}
+                                nombre={cat.nombre}
+                                edad={cat.edad}
+                                icon={cat.icon}
+                                descripcion={cat.descripcion}
+                            />
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Benefits */}
             <section className="escuela-beneficios">
                 <div className="container">
                     <h2 className="section-title">
@@ -139,21 +96,17 @@ function Escuela() {
                     </p>
                     <div className="beneficios-grid">
                         {beneficios.map((b, i) => (
-                            <div key={i} className="beneficio-item">
-                                <div className="beneficio-icon">
-                                    <i className={b.icon}></i>
-                                </div>
-                                <div className="beneficio-text">
-                                    <h4>{b.titulo}</h4>
-                                    <p>{b.desc}</p>
-                                </div>
-                            </div>
+                            <BeneficioCard
+                                key={i}
+                                icon={b.icon}
+                                titulo={b.titulo}
+                                desc={b.desc}
+                            />
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Gallery */}
             <section className="escuela-galeria">
                 <div className="container">
                     <h2 className="section-title">
@@ -173,7 +126,6 @@ function Escuela() {
                 </div>
             </section>
 
-            {/* CTA */}
             <section className="escuela-inscripcion">
                 <div className="container">
                     <div className="cta-box">

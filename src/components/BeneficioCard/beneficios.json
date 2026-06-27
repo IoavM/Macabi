@@ -1,0 +1,8 @@
+[
+    { "icon": "fas fa-chalkboard-teacher", "titulo": "Entrenadores Certificados", "desc": "Staff profesional con licencias y experiencia comprobada." },
+    { "icon": "fas fa-shield-alt", "titulo": "Seguro Deportivo", "desc": "Todos nuestros alumnos cuentan con seguro contra accidentes." },
+    { "icon": "fas fa-dumbbell", "titulo": "Preparación Física", "desc": "Programa de acondicionamiento físico integral para cada categoría." },
+    { "icon": "fas fa-trophy", "titulo": "Torneos", "desc": "Participación en torneos internos y externos durante todo el año." },
+    { "icon": "fas fa-medkit", "titulo": "Atención Médica", "desc": "Primeros auxilios y seguimiento médico para los jugadores." },
+    { "icon": "fas fa-tshirt", "titulo": "Uniformes", "desc": "Kit deportivo completo incluido en la inscripción." }
+]

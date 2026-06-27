@@ -1,8 +1,68 @@
-/* ===== CANCHAS PAGE ===== */
-.canchas-list {
-    padding: 80px 0;
+/*-----VISTA-PREVIA--------*/
+.tarjeta-vista-previa-cancha {
+    background: var(--color-black-card);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all var(--transition-normal);
 }
 
+.tarjeta-vista-previa-cancha:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-green);
+    box-shadow: var(--shadow-glow);
+}
+
+.tarjeta-vista-previa-cancha .marcador-imagen {
+    height: 220px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--color-gray-dark);
+}
+
+.tarjeta-vista-previa-cancha .marcador-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.informacion-vista-previa-cancha {
+    padding: 24px;
+}
+
+.informacion-vista-previa-cancha .etiqueta-cancha {
+    display: inline-block;
+    background: rgba(0, 200, 83, 0.15);
+    color: var(--color-green);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.informacion-vista-previa-cancha h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+.informacion-vista-previa-cancha p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.precio-cancha {
+    color: var(--color-green);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/*-----VISTA-DETALLADA--------*/
 .cancha-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,11 +83,11 @@
     direction: rtl;
 }
 
-.cancha-item.reverse>* {
+.cancha-item.reverse > * {
     direction: ltr;
 }
 
-/* Gallery */
+/*-----GALERIA--------*/
 .cancha-gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -36,6 +96,15 @@
 
 .cancha-gallery-main .placeholder-img {
     height: 350px;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-gray-dark);
+}
+
+.cancha-gallery-main .placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cancha-gallery-thumbs {
@@ -46,9 +115,19 @@
 
 .cancha-gallery-thumbs .placeholder-img {
     height: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-gray-dark);
 }
 
-/* Info */
+.cancha-gallery-thumbs .placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+/*-----INFORMACION--------*/
 .cancha-info {
     padding: 20px 0;
 }
@@ -77,6 +156,7 @@
     font-size: clamp(2rem, 4vw, 3rem);
     text-transform: uppercase;
     margin-bottom: 12px;
+    color: var(--color-white);
 }
 
 .cancha-info h2 span {
@@ -111,7 +191,7 @@
     text-align: center;
 }
 
-/* Prices */
+/*-----PRECIOS--------*/
 .cancha-prices {
     background: var(--color-black-light);
     border: 1px solid var(--color-gray-dark);
@@ -125,6 +205,7 @@
     font-size: 1.2rem;
     margin-bottom: 12px;
     letter-spacing: 1px;
+    color: var(--color-white);
 }
 
 .price-row {
@@ -157,7 +238,7 @@
     font-size: 1.1rem;
 }
 
-/* Features badges */
+/*-----CARACTERISTICAS--------*/
 .cancha-features {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +263,7 @@
     font-size: 0.7rem;
 }
 
-/* ===== RESPONSIVE ===== */
+/*-----DISENIO-RESPONSIVO--------*/
 @media (max-width: 968px) {
     .cancha-item {
         grid-template-columns: 1fr;

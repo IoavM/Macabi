@@ -1,0 +1,42 @@
+.beneficio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: var(--color-black-card);
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-normal);
+}
+
+.beneficio-item:hover {
+    border-color: var(--color-green);
+    transform: translateY(-3px);
+}
+
+.beneficio-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+    background: rgba(0, 200, 83, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-green);
+    font-size: 1.2rem;
+}
+
+.beneficio-text h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+}
+
+.beneficio-text p {
+    color: var(--color-gray);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}

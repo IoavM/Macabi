@@ -1,4 +1,4 @@
-/* ===== CONTACTO PAGE ===== */
+/*-----CONTENIDO-CONTACTO--------*/
 .contacto-content {
     padding: 80px 0;
 }
@@ -10,7 +10,7 @@
     align-items: start;
 }
 
-/* Info Panel */
+/*-----PANEL-INFORMACION--------*/
 .contacto-info {
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
     color: var(--color-green);
 }
 
-/* Social */
+/*-----REDES-SOCIALES--------*/
 .contacto-social {
     display: flex;
     gap: 12px;
@@ -108,7 +108,7 @@
     transform: translateY(-3px);
 }
 
-/* Map */
+/*-----MAPA--------*/
 .contacto-map {
     margin-top: 0;
 }
@@ -117,7 +117,7 @@
     height: 250px;
 }
 
-/* Form */
+/*-----FORMULARIO--------*/
 .contacto-form-card {
     background: var(--color-black-card);
     border: 1px solid var(--color-gray-dark);
@@ -141,7 +141,6 @@
     font-size: 0.95rem;
 }
 
-/* Reuse form styles from Reservas */
 .contacto-form-card .form-group {
     margin-bottom: 20px;
 }
@@ -195,7 +194,7 @@
     gap: 16px;
 }
 
-/* ===== RESPONSIVE ===== */
+/*-----DISENIO-RESPONSIVO--------*/
 @media (max-width: 968px) {
     .contacto-wrapper {
         grid-template-columns: 1fr;

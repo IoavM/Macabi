@@ -91,28 +91,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== UTILITY CLASSES ===== */
-.container {
+.container, .contenedor {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.section {
+.section, .seccion {
   padding: 100px 0;
 }
 
-.section-title {
+.section-title, .titulo-seccion {
   font-size: clamp(2.5rem, 5vw, 4rem);
   text-align: center;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 
-.section-title .highlight {
+.section-title .highlight, .titulo-seccion .destacado {
   color: var(--color-green);
 }
 
-.section-subtitle {
+.section-subtitle, .subtitulo-seccion {
   text-align: center;
   color: var(--color-gray);
   font-size: 1.1rem;
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
-.btn {
+.btn, .boton {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -135,24 +135,24 @@ h1, h2, h3, h4, h5, h6 {
   transition: all var(--transition-normal);
 }
 
-.btn-primary {
+.btn-primary, .boton-primario {
   background: var(--color-green);
   color: var(--color-black);
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .boton-primario:hover {
   background: var(--color-green-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
 }
 
-.btn-outline {
+.btn-outline, .boton-delineado {
   background: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
 }
 
-.btn-outline:hover {
+.btn-outline:hover, .boton-delineado:hover {
   background: var(--color-white);
   color: var(--color-black);
   transform: translateY(-2px);
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== PLACEHOLDER IMAGE ===== */
-.placeholder-img {
+.placeholder-img, .marcador-imagen {
   background: var(--color-black-card);
   border: 2px dashed var(--color-gray-dark);
   border-radius: var(--border-radius);
@@ -221,11 +221,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: border-color var(--transition-normal);
 }
 
-.placeholder-img:hover {
+.placeholder-img:hover, .marcador-imagen:hover {
   border-color: var(--color-green);
 }
 
-.placeholder-img i {
+.placeholder-img i, .marcador-imagen i {
   font-size: 2.5rem;
   color: var(--color-green);
 }
